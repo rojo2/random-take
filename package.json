@@ -1,0 +1,49 @@
+{
+  "name": "@rojo2/random-take",
+  "version": "1.0.0",
+  "main": "dist/random-take.cjs.js",
+  "module": "dist/random-take.esm.js",
+  "browser": "dist/random-take.udm.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production rollup -c",
+    "test": "NODE_ENV=test mocha --require babel-core/register",
+    "test:watch": "NODE_ENV=test mocha --watch --require babel-core/register"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^5.1.1",
+    "rollup": "^0.59.0",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-commonjs": "^9.1.3",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "author": "ROJO 2 <hola@rojo2.com> (http://rojo2.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojo2/random-take.git"
+  },
+  "keywords": [
+    "random",
+    "take",
+    "list",
+    "array"
+  ],
+  "bugs": {
+    "url": "https://github.com/rojo2/random-take/issues"
+  },
+  "homepage": "https://github.com/rojo2/random-take#readme",
+  "dependencies": {
+    "@rojo2/random-index": "^1.0.1"
+  }
+}
